@@ -11,9 +11,52 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{6FCCF2F3-414D-4C08-AA18-D4E0B1709EB2}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AloTaxi.Web", "AloTaxi.Web\AloTaxi.Web.csproj", "{244FD489-0545-47A7-8AD1-92CCA32E87F5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AloTaxi.Api", "AloTaxi.Api\AloTaxi.Api.csproj", "{017F60D6-41B6-48A8-946C-49D93D365981}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AloTaxi.Application", "AloTaxi.Application\AloTaxi.Application.csproj", "{5F2AE074-5D86-4F80-8233-70F9FADC05A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AloTaxi.Data", "AloTaxi.Data\AloTaxi.Data.csproj", "{8724942F-B55E-4505-8280-B38CC9052525}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AloTaxi.Domain", "AloTaxi.Domain\AloTaxi.Domain.csproj", "{0E6FF2B2-7E4E-439E-B690-13152E3564ED}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{244FD489-0545-47A7-8AD1-92CCA32E87F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{244FD489-0545-47A7-8AD1-92CCA32E87F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{244FD489-0545-47A7-8AD1-92CCA32E87F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{244FD489-0545-47A7-8AD1-92CCA32E87F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{017F60D6-41B6-48A8-946C-49D93D365981}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{017F60D6-41B6-48A8-946C-49D93D365981}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{017F60D6-41B6-48A8-946C-49D93D365981}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{017F60D6-41B6-48A8-946C-49D93D365981}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F2AE074-5D86-4F80-8233-70F9FADC05A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F2AE074-5D86-4F80-8233-70F9FADC05A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F2AE074-5D86-4F80-8233-70F9FADC05A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F2AE074-5D86-4F80-8233-70F9FADC05A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8724942F-B55E-4505-8280-B38CC9052525}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8724942F-B55E-4505-8280-B38CC9052525}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8724942F-B55E-4505-8280-B38CC9052525}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8724942F-B55E-4505-8280-B38CC9052525}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E6FF2B2-7E4E-439E-B690-13152E3564ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E6FF2B2-7E4E-439E-B690-13152E3564ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E6FF2B2-7E4E-439E-B690-13152E3564ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E6FF2B2-7E4E-439E-B690-13152E3564ED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{244FD489-0545-47A7-8AD1-92CCA32E87F5} = {6FCCF2F3-414D-4C08-AA18-D4E0B1709EB2}
+		{017F60D6-41B6-48A8-946C-49D93D365981} = {6FCCF2F3-414D-4C08-AA18-D4E0B1709EB2}
+		{5F2AE074-5D86-4F80-8233-70F9FADC05A7} = {2C52642A-8DD9-4F14-9C42-FD72676478D7}
+		{8724942F-B55E-4505-8280-B38CC9052525} = {7EDC68D5-CFC4-47F6-A7DF-3517E0FD6CDF}
+		{0E6FF2B2-7E4E-439E-B690-13152E3564ED} = {B7BE7B21-F31A-49C2-AE35-019EF289EACA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {41209F71-7472-4E70-843C-9997F75C5FA7}
