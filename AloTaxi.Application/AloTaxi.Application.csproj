@@ -10,12 +10,18 @@
     <Folder Include="Dtos\" />
     <Folder Include="Services\Interfaces\" />
     <Folder Include="Services\Implementation\" />
-    <Folder Include="Utilities\Convertors\" />
-    <Folder Include="Utilities\Extensions\" />
-    <Folder Include="Utilities\Generators\" />
-    <Folder Include="Utilities\Senders\" />
     <Folder Include="Utilities\Security\" />
-    <Folder Include="Utilities\StaticPaths\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="HtmlSanitizer" Version="7.1.542" />
+    <PackageReference Include="Magick.NET-Q16-x64" Version="11.3.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Features" Version="5.0.17" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.Extensions" Version="6.0.7" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.ViewFeatures" Version="2.2.0" />
+    <PackageReference Include="System.Drawing.Common" Version="6.0.0" />
   </ItemGroup>
 
 </Project>
