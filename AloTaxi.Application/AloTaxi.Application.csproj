@@ -6,4 +6,16 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Dtos\" />
+    <Folder Include="Services\Interfaces\" />
+    <Folder Include="Services\Implementation\" />
+    <Folder Include="Utilities\Convertors\" />
+    <Folder Include="Utilities\Extensions\" />
+    <Folder Include="Utilities\Generators\" />
+    <Folder Include="Utilities\Senders\" />
+    <Folder Include="Utilities\Security\" />
+    <Folder Include="Utilities\StaticPaths\" />
+  </ItemGroup>
+
 </Project>

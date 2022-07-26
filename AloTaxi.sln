@@ -15,11 +15,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AloTaxi.Web", "AloTaxi.Web\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AloTaxi.Api", "AloTaxi.Api\AloTaxi.Api.csproj", "{017F60D6-41B6-48A8-946C-49D93D365981}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AloTaxi.Application", "AloTaxi.Application\AloTaxi.Application.csproj", "{5F2AE074-5D86-4F80-8233-70F9FADC05A7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AloTaxi.Application", "AloTaxi.Application\AloTaxi.Application.csproj", "{5F2AE074-5D86-4F80-8233-70F9FADC05A7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AloTaxi.Data", "AloTaxi.Data\AloTaxi.Data.csproj", "{8724942F-B55E-4505-8280-B38CC9052525}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AloTaxi.Data", "AloTaxi.Data\AloTaxi.Data.csproj", "{8724942F-B55E-4505-8280-B38CC9052525}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AloTaxi.Domain", "AloTaxi.Domain\AloTaxi.Domain.csproj", "{0E6FF2B2-7E4E-439E-B690-13152E3564ED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AloTaxi.Domain", "AloTaxi.Domain\AloTaxi.Domain.csproj", "{0E6FF2B2-7E4E-439E-B690-13152E3564ED}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{A08A5B73-277F-4694-AE01-F07F7CF6387E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
