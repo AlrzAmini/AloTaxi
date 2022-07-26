@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html direction="rtl" dir="rtl" style="direction: rtl" >
+	<head><base href="">
+		<title>@ViewData["Title"]</title>
+		<partial name="Partials/_AdminMetaTags"/>
+		@await RenderSectionAsync("MetaTags", false)
+		<partial name="Partials/_AdminHeaderRefrences"/>
+		@await RenderSectionAsync("Styles", false)
+	</head>
+	<!--begin::Body-->
+	<body id="kt_body" class="header-fixed header-tablet-and-mobile-fixed">
+		<div class="d-flex flex-column flex-root">
+			<div class="page d-flex flex-row flex-column-fluid">
+				<div class="wrapper d-flex flex-column flex-row-fluid" id="kt_wrapper">
+                    @await Component.InvokeAsync("AdminHeaderComponent")
+                    <div class="d-flex flex-column-fluid">
+						@await Component.InvokeAsync("SideBarComponent")
+						@RenderBody()
+					</div>
+				</div>
+			</div>
+		</div>
+		@await Component.InvokeAsync("DrawerComponent")
+		@await RenderSectionAsync("Drawers",false)
+		<partial name="Partials/_AdminScrollTop"/>
+		@await RenderSectionAsync("Modals",false)
+		<partial name="Partials/_AdminFooterRefrences"/>
+		@await RenderSectionAsync("Scripts", false)
+	</body>
+</html>

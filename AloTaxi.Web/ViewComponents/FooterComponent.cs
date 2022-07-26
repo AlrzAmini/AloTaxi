@@ -2,11 +2,11 @@
 
 namespace AloTaxi.Web.ViewComponents
 {
-    public class HeaderComponent : ViewComponent
+    public class FooterComponent : ViewComponent
     {
         public async Task<IViewComponentResult> InvokeAsync()
         {
-            return View("Header");
+            return View("Footer");
         }
     }
 }

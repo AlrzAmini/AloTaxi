@@ -1,30 +1,23 @@
 ﻿<!DOCTYPE html>
 <html direction="rtl" dir="rtl" style="direction: rtl" >
+	
 	<head><base href="">
 		<title>@ViewData["Title"]</title>
-		<partial name="Partials/_MetaTags"/>
-		@await RenderSectionAsync("MetaTags", false)
+        <partial name="Partials/_MetaTags"/>
+        @await RenderSectionAsync("MetaTags",required:false)
 		<partial name="Partials/_HeaderRefrences"/>
-		@await RenderSectionAsync("Styles", false)
+		@await RenderSectionAsync("Styles",required:false)
 	</head>
+	
 	<!--begin::Body-->
-	<body id="kt_body" class="header-fixed header-tablet-and-mobile-fixed">
-		<div class="d-flex flex-column flex-root">
-			<div class="page d-flex flex-row flex-column-fluid">
-				<div class="wrapper d-flex flex-column flex-row-fluid" id="kt_wrapper">
-					@await Component.InvokeAsync("HeaderComponent")
-					<div class="d-flex flex-column-fluid">
-						@await Component.InvokeAsync("SideBarComponent")
-						@RenderBody()
-					</div>
-				</div>
-			</div>
-		</div>
-		@await Component.InvokeAsync("DrawerComponent")
-		@await RenderSectionAsync("Drawers",false)
-		<partial name="Partials/_ScrollTop"/>
-		@await RenderSectionAsync("Modals",false)
-		<partial name="Partials/_FooterRefrences"/>
-		@await RenderSectionAsync("Scripts", false)
+	<body id="kt_body" data-bs-spy="scroll" data-bs-target="#kt_landing_menu" data-bs-offset="200" class="bg-white position-relative">
+		<!--begin::Main-->
+		<!--begin::Root-->
+		@RenderBody()
+		<!--end::Root-->
+		<!--end::Main-->
+    <partial name="Partials/_FooterRefrences"/>
+    @await RenderSectionAsync("Scripts",required:false)
 	</body>
+	<!--end::Body-->
 </html>

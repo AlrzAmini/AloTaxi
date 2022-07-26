@@ -1,14 +1,15 @@
 ﻿using AloTaxi.Web.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using AloTaxi.Web.Areas.AdminPanel.Controllers.AdminBase;
 
-namespace AloTaxi.Web.Controllers
+namespace AloTaxi.Web.Areas.AdminPanel.Controllers
 {
-    public class HomeController : Controller
+    public class AdminHomeController : AdminBaseController
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly ILogger<AdminHomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        public AdminHomeController(ILogger<AdminHomeController> logger)
         {
             _logger = logger;
         }
