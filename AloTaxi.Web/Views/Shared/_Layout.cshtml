@@ -1,23 +1,30 @@
 ﻿<!DOCTYPE html>
-<html direction="rtl" dir="rtl" style="direction: rtl" >
-	
-	<head><base href="">
-		<title>@ViewData["Title"]</title>
-        <partial name="Partials/_MetaTags"/>
-        @await RenderSectionAsync("MetaTags",required:false)
-		<partial name="Partials/_HeaderRefrences"/>
-		@await RenderSectionAsync("Styles",required:false)
-	</head>
-	
-	<!--begin::Body-->
-	<body id="kt_body" data-bs-spy="scroll" data-bs-target="#kt_landing_menu" data-bs-offset="200" class="bg-white position-relative">
-		<!--begin::Main-->
-		<!--begin::Root-->
-		@RenderBody()
-		<!--end::Root-->
-		<!--end::Main-->
-    <partial name="Partials/_FooterRefrences"/>
-    @await RenderSectionAsync("Scripts",required:false)
-	</body>
-	<!--end::Body-->
+<html direction="rtl" dir="rtl" style="direction: rtl">
+
+<head>
+    <base href="">
+    <title>@ViewData["Title"]</title>
+    <partial name="Partials/_MetaTags" />
+    @await RenderSectionAsync("MetaTags",required:false)
+    <partial name="Partials/_HeaderRefrences" />
+    @await RenderSectionAsync("Styles",required:false)
+</head>
+
+<!--begin::Body-->
+<body id="kt_body" data-bs-spy="scroll" data-bs-target="#kt_landing_menu" data-bs-offset="200" class="bg-white position-relative">
+    <div class="d-flex flex-column flex-root">
+        @await Component.InvokeAsync("HeaderComponent")
+        <!--begin::Main-->
+        <!--begin::Root-->
+        @RenderBody()
+        <!--end::Root-->
+        <!--end::Main-->
+        <!--begin::Footer بخش-->
+        @await Component.InvokeAsync("FooterComponent")
+        <!--end::Footer بخش-->
+    </div>
+    <partial name="Partials/_FooterRefrences" />
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+<!--end::Body-->
 </html>

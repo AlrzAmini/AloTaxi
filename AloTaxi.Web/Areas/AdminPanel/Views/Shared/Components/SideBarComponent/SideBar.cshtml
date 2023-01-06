@@ -1,4 +1,8 @@
-﻿<!--begin::کناری-->
+﻿@{
+    var controllerName = Context.Request.RouteValues["controller"]?.ToString();
+    var actionName = Context.Request.RouteValues["action"]?.ToString();
+}
+<!--begin::کناری-->
 						<div id="kt_aside" class="aside card" data-kt-drawer="true" data-kt-drawer-name="aside" data-kt-drawer-activate="{default: true, lg: false}" data-kt-drawer-overlay="true" data-kt-drawer-width="{default:'200px', '300px': '250px'}" data-kt-drawer-direction="start" data-kt-drawer-toggle="#kt_aside_toggle">
 							<!--begin::کناری menu-->
 							<div class="aside-menu flex-column-fluid px-5">
@@ -25,21 +29,21 @@
 											</span>
 											<div class="menu-sub menu-sub-accordion menu-active-bg">
 												<div class="menu-item">
-													<a class="menu-link active" href="../../demo14/dist/index.html">
-														<span class="menu-bullet">
-															<span class="bullet bullet-dot"></span>
-														</span>
-														<span class="menu-title">چند منظوره</span>
-													</a>
-												</div>
-												<div class="menu-item">
-													<a class="menu-link" href="../../demo14/dist/dashboards/ecommerce.html">
-														<span class="menu-bullet">
-															<span class="bullet bullet-dot"></span>
-														</span>
-														<span class="menu-title">فروشگاه</span>
-													</a>
-												</div>
+                                                    <a class="menu-link @(controllerName == "AdminHome" && actionName == "Index" ? "active":"")" asp-controller="AdminHome" asp-action="Index">
+                                                            <span class="menu-bullet">
+                                                                <span class="bullet bullet-dot"></span>
+                                                            </span>
+                                                            <span class="menu-title">چند منظوره</span>
+                                                        </a>
+                                                </div>
+                                                <div class="menu-item">
+                                                    <a class="menu-link @(controllerName == "AdminCustomers" && actionName == "Index" ? "active":"")" asp-controller="AdminCustomers" asp-action="Index">
+                                                            <span class="menu-bullet">
+                                                                <span class="bullet bullet-dot"></span>
+                                                            </span>
+                                                            <span class="menu-title">کاربران</span>
+                                                        </a>
+                                                </div>
 												<div class="menu-item">
 													<a class="menu-link" href="../../demo14/dist/dashboards/projects.html">
 														<span class="menu-bullet">

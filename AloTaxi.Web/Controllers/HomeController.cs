@@ -1,6 +1,8 @@
 ﻿using AloTaxi.Web.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using System.Security.Cryptography.Xml;
+using AloTaxi.Application.Utilities.Security.Encryption;
 
 namespace AloTaxi.Web.Controllers
 {
@@ -15,6 +17,8 @@ namespace AloTaxi.Web.Controllers
 
         public IActionResult Index()
         {
+            var enc = Encryption.Encrypt("alireza");
+            var dec = Encryption.Decrypt(enc);
             return View();
         }
 

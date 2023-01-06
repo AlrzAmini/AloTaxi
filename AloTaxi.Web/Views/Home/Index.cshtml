@@ -1,8 +1,7 @@
 ﻿@{
     ViewData["Title"] = "الو تاکسی";
 }
-<div class="d-flex flex-column flex-root">
-    @await Component.InvokeAsync("HeaderComponent")
+
     <!--begin::How It Works بخش-->
     <div class="mb-n10 mb-lg-n20 z-index-2">
         <!--begin::Container-->
@@ -839,10 +838,6 @@
         <!--end::Container-->
     </div>
     <!--end::Testimonials بخش-->
-    <!--begin::Footer بخش-->
-    @await Component.InvokeAsync("FooterComponent")
-    <!--end::Footer بخش-->
+   
 
     <partial name="Partials/_ScrollTop" />
-
-</div>

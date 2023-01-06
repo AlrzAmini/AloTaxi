@@ -5,6 +5,7 @@ using AloTaxi.Web.Areas.AdminPanel.Controllers.AdminBase;
 
 namespace AloTaxi.Web.Areas.AdminPanel.Controllers
 {
+    [Route("admin")]
     public class AdminHomeController : AdminBaseController
     {
         private readonly ILogger<AdminHomeController> _logger;
@@ -19,6 +20,7 @@ namespace AloTaxi.Web.Areas.AdminPanel.Controllers
             return View();
         }
 
+        [HttpGet("error")]
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
